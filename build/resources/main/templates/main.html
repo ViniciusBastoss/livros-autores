@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+</head>
+<body>
+<h1>Página Principal</h1>
+
+<h2>Autores</h2>
+<a th:href="@{/api/author/authors}">Ver Todos os Autores</a><br/>
+<a th:href="@{/api/author/authorSearch}">Buscar um Autor</a><br/>
+<a th:href="@{/api/author/addauthor}">Adicionar Autor</a><br/>
+<a th:href="@{/api/author/editAuthor}">Editar Autor</a><br/>
+<a th:href="@{/api/author/deleteAuthor}">Deletar Autor</a><br/>
+
+<h2>Livros</h2>
+<a th:href="@{/api/book/books}">Ver Todos os Livros</a><br/>
+<a th:href="@{/api/book/bookSearch}">Buscar um Livro</a><br/>
+<a th:href="@{/api/book/addbook}">Adicionar Livro</a><br/>
+<a th:href="@{/api/book/editBook}">Editar Livro</a><br/>
+<a th:href="@{/api/book/deleteBook}">Deletar Livro</a><br/>
+</body>
+</html>

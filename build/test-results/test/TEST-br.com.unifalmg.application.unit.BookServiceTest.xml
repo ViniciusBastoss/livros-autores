@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.unifalmg.application.unit.BookServiceTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-12-15T17:49:51" hostname="vinicius-Nitro-AN515-55" time="1.015">
+  <properties/>
+  <testcase name="#editBook &gt; When Book not exist &gt; Throw an exception" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.94"/>
+  <testcase name="#getAuthor &gt; When the id is not null &gt; When no book is found &gt; Throw an exception" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.005"/>
+  <testcase name="#getBooks &gt; When there are no books &gt; Return empty list" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.004"/>
+  <testcase name="#add &gt; When Book is added and author not exist &gt; Throw an exception" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.004"/>
+  <testcase name="#editBook &gt; When book data is null &gt; Throw an exception" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.006"/>
+  <testcase name="#add &gt; When Book is added and author exist &gt; Return book" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.006"/>
+  <testcase name="#getBook &gt; When the id is null &gt; Throw an exception" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.003"/>
+  <testcase name="#deleteBook &gt; When id is invalid &gt; Throw an exception" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.004"/>
+  <testcase name="#deleteBook &gt; When confirmationDelete is not True &gt; Throw an exception" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.005"/>
+  <testcase name="#getBook &gt; When the id is not null &gt; When a book is found &gt; Return the book" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.005"/>
+  <testcase name="#add &gt; When book data is null &gt; Throw an exception" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.006"/>
+  <testcase name="#editBook &gt; When Book is edited and author not exist &gt; Throw an exception" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.004"/>
+  <testcase name="#editBook &gt; When Book is edited and author exist &gt; Return book" classname="br.com.unifalmg.application.unit.BookServiceTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

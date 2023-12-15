@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new author</title>
+</head>
+<body>
+<header>
+    <h1>New Author</h1>
+</header>
+
+<main>
+    <form th:action="@{/api/author/addauthor}" th:object="${author}" method="post">
+        <label>
+            First Name:
+            <input type="text" id="first_name" th:field="*{first_name}"/>
+        </label>
+        <br/>
+        <label>
+            Last Name:
+            <input type="text" id="last_name" th:field="*{last_name}"/>
+        </label>
+        <br/>
+        <label>
+            Nationality:
+            <input type="text" id="nationality" th:field="*{nationality}"/>
+        </label>
+        <br/>
+        <button>Cadastrar</button>
+    </form>
+</main>
+</body>
+</html>

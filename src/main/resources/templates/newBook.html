@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new book</title>
+</head>
+<body>
+<header>
+    <h1>New Book</h1>
+</header>
+<main>
+    <form th:action="@{/api/book/addbook}" th:object="${book}" method="post">
+        <label>
+            Title:
+            <input type="text" id="title" th:field="*{title}"/>
+        </label>
+        <br/>
+        <label>
+            Publication Year:
+            <input type="text" id="publication_year" th:field="*{publication_year}"/>
+        </label>
+        <br/>
+        <label>
+            Pages:
+            <input type="text" id="pages" th:field="*{pages}"/>
+        </label>
+        <br/>
+        <label>
+            Author ID:
+            <input type="text" id="idAuthor" name="idAuthor"/>
+        </label>
+        <br/>
+        <button>Cadastrar</button>
+    </form>
+</main>
+</body>
+</html>

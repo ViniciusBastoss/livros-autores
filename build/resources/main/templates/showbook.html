@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Book</title>
+</head>
+<body>
+<header>
+    <h1>Show Book</h1>
+</header>
+<main>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Publication Year</th>
+            <th>Pages</th>
+        </tr>
+        <tr>
+            <td><span th:text="${book.title}"></span></td>
+            <td><span th:text="${book.publication_year}"></span></td>
+            <td><span th:text="${book.pages}"></span></td>
+        </tr>
+    </table>
+
+    <h2>Book author</h2>
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Nationality</th>
+        </tr>
+        <tr>
+            <td><span th:text="${book.author.first_name}"></span></td>
+            <td><span th:text="${book.author.last_name}"></span></td>
+            <td><span th:text="${book.author.nationality}"></span></td>
+        </tr>
+    </table>
+</main>
+</body>
+</html>

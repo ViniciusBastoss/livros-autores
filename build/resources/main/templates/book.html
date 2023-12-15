@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Search a book</title>
+</head>
+<body>
+<header>
+    <h1>Search Book</h1>
+</header>
+
+<main>
+    <form th:action="@{/api/book/bookSearch}" method="post">
+        <label>
+            ID:
+            <input type="text" id="id" name="id"/>
+        </label>
+        <br/>
+
+        <button type="submit">Search</button>
+    </form>
+</main>
+</body>
+</html>
